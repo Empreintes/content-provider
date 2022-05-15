@@ -1,0 +1,32 @@
+{
+  "name": "@empreintes/content-provider",
+  "version": "0.0.1",
+  "description": "A small lib for node.js to import content from text file",
+  "type": "commonjs",
+  "keywords": [],
+  "author": "Julien Appéré - @empreintes",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "main": "src/content_provider.ts",
+  "scripts": {
+    "test": "npx mocha",
+    "prettier": "prettier --write '**/*.ts'",
+    "build": "tsc",
+    "prepare": "npm run build && ts-node publish-pkg.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "latest",
+    "@types/node": "^16.10.3",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "mocha": "^9.1.1",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  }
+}

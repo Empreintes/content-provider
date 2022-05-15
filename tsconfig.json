@@ -1,0 +1,19 @@
+{
+  "ts-node": {  "files": true },
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "es2021",
+    "sourceMap": false,
+    "declaration": true,
+    "declarationDir":"./dist/@types" ,
+    "declarationMap": true,
+    "outDir": "dist/"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
