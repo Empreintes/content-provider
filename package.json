@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "A small lib for node.js to import content from text file",
   "type": "commonjs",
-  "keywords": [],
+  "keywords": ["nodejs"],
   "author": "Julien Appéré - @empreintes",
+  "repository": "https://github.com/Empreintes/content-provider",
   "license": "MIT",
   "engines": {
     "node": ">=12.0.0"

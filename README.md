@@ -25,6 +25,11 @@ fs module
     cp('foo.bar.myfile) // get the content
     cp('afolder.another.folder.myfile) // get the content etc..
 
+#### publish
+
+    npm run prepare
+    npm publish ./dist [options]
+
 ## Licence
 
 released under the MIT license.
