@@ -18,6 +18,8 @@ const log = (error: ErrnoException | null) => {
 delete PACKAGE_JSON["scripts"]
 delete PACKAGE_JSON["devDependencies"]
 delete PACKAGE_JSON["packageManager"]
+delete PACKAGE_JSON["main"]
+PACKAGE_JSON.main = "content_provider.js"
 
 fs.writeFile(
   `${DIST_FOLDER}/package.json`,

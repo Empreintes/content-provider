@@ -1,7 +1,9 @@
 import * as fs from "fs"
 import ContentProviderArgsTypes from "./content_provider_params"
 
-const ContentProvider = (args: ContentProviderArgsTypes):(relative_path: string)=> string => {
+const ContentProvider = (
+  args: ContentProviderArgsTypes
+): ((relative_path: string) => string) => {
   const { base_path, file_extension } = args
 
   return (relative_path: string): string => {

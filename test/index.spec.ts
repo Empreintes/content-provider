@@ -9,9 +9,11 @@ const testArgs: ContentProviderArgsTypes = {
 }
 const cp = ContentProvider(testArgs)
 
-describe("Content Provider", () => {
-  it("basic usage", () => {
-    expect(cp('stuff'),'should be 👌').to.be.string('👌')
-    expect(cp('a.path.very.long.and.boring.hey'),'should be 👍').to.be.string('👍')
+describe("Content Provider commonJS", () => {
+  it("basic", () => {
+    expect(cp("stuff"), "should be 👌").to.be.string("👌")
+    expect(cp("a.path.very.long.and.boring.hey"), "should be 👍").to.be.string(
+      "👍"
+    )
   })
 })

@@ -20,3 +20,4 @@ ehthumbs.db
 ehthumbs_vista.db
 dist
 .yarnrc.yml
+package-lock.json

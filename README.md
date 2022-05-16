@@ -20,15 +20,18 @@ fs module
 
 #### basic usage
 
-    const cp = require("@empreintes/tpljs")
-    cp({base_path:'view',file_extension:'html'})
-    cp('foo.bar.myfile) // get the content
-    cp('afolder.another.folder.myfile) // get the content etc..
+    const {default:content_provider} = require('@empreintes/content-provider')
+    ## or
+    const content_provider = require('@empreintes/content-provider').default
+
+    const cp = content_provider({base_path:'view',file_extension:'html'})
+    cp('foo.bar.myfile) // return the content
+    cp('afolder.another.folder.myfile) // return the content etc..
 
 #### publish
 
-    npm run prepare
-    npm publish ./dist [options]
+     npm run prepare
+     npm publish ./dist [options]
 
 ## Licence
 
@@ -48,3 +51,4 @@ released under the MIT license.
 
 - This is a side project of a side project of a side project (for real)
 - Use in production only if you know what you do.
+- Full synchrone

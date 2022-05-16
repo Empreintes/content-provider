@@ -1,9 +1,11 @@
 {
   "name": "@empreintes/content-provider",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A small lib for node.js to import content from text file",
   "type": "commonjs",
-  "keywords": ["nodejs"],
+  "keywords": [
+    "nodejs"
+  ],
   "author": "Julien Appéré - @empreintes",
   "repository": "https://github.com/Empreintes/content-provider",
   "license": "MIT",
@@ -12,6 +14,7 @@
   },
   "main": "src/content_provider.ts",
   "scripts": {
+    "pretest": "npm run build",
     "test": "npx mocha",
     "prettier": "prettier --write '**/*.ts'",
     "build": "tsc",

@@ -2,8 +2,8 @@
   "ts-node": {  "files": true },
   "compilerOptions": {
     "module": "CommonJS",
-    "moduleResolution": "node",
-    "target": "es2021",
+    "moduleResolution": "Node",
+    "target": "ES6",
     "sourceMap": false,
     "declaration": true,
     "declarationDir":"./dist/@types" ,
