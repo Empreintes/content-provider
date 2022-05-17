@@ -26,7 +26,8 @@ fs module
     cp('foo.bar.myfile) // return the content
     cp('afolder.another.folder.myfile) // return the content etc..
 ---
-    contentProvider({ file_extension: "json", base_path: "." })("myfile")
+    const {content_provider} = require('@empreintes/content-provider')
+    content_provider({ file_extension: "json", base_path: "." })("myfile")
 
 #### publish
 
