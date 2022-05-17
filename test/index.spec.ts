@@ -1,13 +1,13 @@
 import { describe } from "mocha"
 import { expect } from "chai"
-import ContentProvider from "../src/content_provider"
+import { contentProvider } from "../src"
 import ContentProviderArgsTypes from "../src/content_provider_params"
 
 const testArgs: ContentProviderArgsTypes = {
   base_path: "test/views",
   file_extension: "html"
 }
-const cp = ContentProvider(testArgs)
+const cp = contentProvider(testArgs)
 
 describe("Content Provider commonJS", () => {
   it("basic", () => {

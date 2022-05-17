@@ -1,6 +1,6 @@
 "use strict"
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const {default:content_provider} = require('../dist/content_provider')
+const { contentProvider } = require('../dist/content_provider')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const {describe,it} = require('mocha')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -11,7 +11,7 @@ describe("Content Provider", () => {
         base_path: "test/views",
         file_extension: "html"
     }
-    const cp = content_provider(testArgs)
+    const cp = contentProvider(testArgs)
     it("basic usage", () => {
         assert.equal(cp('stuff'), '👌')
         assert.equal(cp('a.path.very.long.and.boring.hey'), '👍')

@@ -1,0 +1,1 @@
+export {contentProvider} from './content_provider'
