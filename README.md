@@ -20,14 +20,14 @@ fs module
 
 #### basic usage
 
-    const {content_provider} = require('@empreintes/content-provider')
+    const {contentProvider} = require('@empreintes/content-provider')
 
-    const cp = content_provider({base_path:'view',file_extension:'html'})
+    const cp = contentProvider({base_path:'view',file_extension:'html'})
     cp('foo.bar.myfile) // return the content
     cp('afolder.another.folder.myfile) // return the content etc..
 ---
-    const {content_provider} = require('@empreintes/content-provider')
-    content_provider({ file_extension: "json", base_path: "." })("myfile")
+    const {contentProvider} = require('@empreintes/content-provider')
+    contentProvider({ file_extension: "json", base_path: "." })("myfile")
 
 #### publish
 
