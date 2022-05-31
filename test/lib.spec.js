@@ -1,6 +1,6 @@
 "use strict"
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { contentProvider } = require('../dist/content_provider')
+const { contentProvider } = require('../dist/')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const {describe,it} = require('mocha')
 // eslint-disable-next-line @typescript-eslint/no-var-requires

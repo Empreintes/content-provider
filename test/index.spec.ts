@@ -1,6 +1,6 @@
 import { describe } from "mocha"
 import { expect } from "chai"
-import { contentProvider } from "../src"
+import { contentProvider } from "../dist"
 import ContentProviderArgsTypes from "../src/content_provider_params"
 
 const testArgs: ContentProviderArgsTypes = {
